@@ -2,7 +2,7 @@
 FROM tiangolo/nginx-rtmp:latest
 
 # Additional config to enable HLS
-COPY nginx-rtmp.conf /etc/nginx
+COPY nginx-rtmp.conf /etc/nginx/nginx.conf
 
 # Port for RTMP
 EXPOSE 1935/tcp
